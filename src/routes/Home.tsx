@@ -41,7 +41,8 @@ const Home:React.FC = () =>{
       애니송, J-POP, ost 등의 서브컬쳐 곡들을 맞춰 보세요 !<br/>
       지속적으로 개발이 이루어지는 상황으로 사이트의 디자인 변화, 기능추가 등이 있을 수 있어요<br/><br/>
 
-      버그 리포트, 사이트 문의등은 <TwitterLink twitterId="Fotoner_P"/>로 연락해주세요<br/><br/>
+      버그 리포트, 사이트 문의, 아이디어, 등은 언제든 환영합니다! <br/>
+      <TwitterLink twitterId="Fotoner_P"/>로 연락해주세요!!<br/><br/>
       <LinkButton to="/quiz">퀴즈 풀어보기</LinkButton>
     </Article>
   );

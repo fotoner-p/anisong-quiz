@@ -19,7 +19,13 @@ const GlobalStyle = createGlobalStyle<{theme: DefaultTheme}>`
     padding: 0;
     background-color: ${({ theme }) => theme.color.sub.toString()};
   }
-
+  
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
   ul{
     margin: 0;
     padding: 0;

@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import Home from "./routes/Home";
 import Quiz from "./routes/Quiz";
+import Answer from "./routes/Answer";
 
 import Header from "./components/Header";
 
@@ -13,7 +14,6 @@ const Main = styled.div`
   width: 100%;
 `
 
-
 const App: React.FC = () => {
   return (
     <Main>
@@ -22,6 +22,7 @@ const App: React.FC = () => {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/quiz" component={Quiz}/>
+          <Route exact path="/answer" component={Answer}/>
         </Switch>
       </BrowserRouter>
     </Main>

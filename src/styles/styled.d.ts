@@ -9,6 +9,11 @@ declare module "styled-components" {
             main: string;
             mainBright: string;
             sub: string;
+
+            mainGrey: string;
+            borderGrey: string;
+
+            mainWhite: string;
         };
     }
 }

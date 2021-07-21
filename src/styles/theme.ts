@@ -6,7 +6,12 @@ const theme: DefaultTheme = {
     color: {
         main: "#7e6ca8",
         mainBright: "#9986cd",
-        sub: "#262133"
+        sub: "#262133",
+
+        mainGrey: "grey",
+        borderGrey: "darkgrey",
+
+        mainWhite: "#fff",
     }
 };
 
