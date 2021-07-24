@@ -1,22 +1,17 @@
 import React, {useEffect, useState} from "react"
 import {useLocation} from "react-router-dom"
 
-import axios from "axios";
-
 import {submitQuiz} from "../lib/api"
-import QuizSet from "../type/QuizSet"
 
 import Article from "../components/Article"
-import SongInfo from "../type/SongInfo"
+import SongInfoBox from "../components/SongInfoBox"
+
+import QuizSet from "../type/QuizSet"
+import QuizResult from "../type/QuizResult"
 
 interface LocationState {
   quiz: QuizSet;
   target: string;
-}
-
-type QuizResult = {
-  status: string,
-  info: SongInfo | undefined
 }
 
 const Answer: React.FC = () => {
@@ -38,7 +33,9 @@ const Answer: React.FC = () => {
 
   return(
     <Article>
-      
+      {
+        result?.info&&<SongInfoBox songInfo={result.info}/>
+      }
     </Article>
   );
 }
